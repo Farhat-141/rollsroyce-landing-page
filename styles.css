@@ -1,0 +1,314 @@
+body{
+    background-color: gray;
+    color: white;
+    margin: 20px 80px;
+}
+.container{
+    text-shadow: 0 0 15px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 3vh;
+    height: 84vh;
+    width: auto;   
+    padding: 25px 60px;
+    margin: 5px;
+    background-image: url('https://i.postimg.cc/mZVMDwhm/12.jpg');
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    box-shadow: 0 0 20px black;
+    background-color: #ffffff;
+}
+#t{
+    font-family:gill ;
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: 0.4em;
+    margin: 0;
+}
+@font-face {
+    font-family:gill ;
+    src: url(gill-sans-2/Gill\ Sans\ Light.otf);
+}
+#title{
+    font-family:gill ;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    font-weight: 580;
+}
+header
+nav ul{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav li{
+    display: inline;
+    cursor: pointer;
+}
+article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.left{
+    width: 40vh;
+    margin-top: 50px;
+}
+.right{
+    margin-top: 10px;
+}
+article > *{
+    font-family: sans-serif;
+}
+.des h1{
+    font-size: 25px;
+    font-weight: 400;
+}
+.des p{
+    font-size: 12px;
+    font-weight: 500;
+}
+.des button{
+    border: 1px solid transparent;
+    border-radius: 25px;
+    padding: 10px 35px;
+    font-weight: 500;
+    color: white;
+    background-color: rgb(0, 162, 255);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.des button:hover{
+    background-color:transparent;
+    border: 1px solid white;
+    transition: 0.2s;
+}
+.features{
+    font-size: small;
+}
+.features ul{
+    list-style: none;
+    padding: 0;
+}
+.features li pre{
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.mg{
+    display: block;
+    clear: both;
+    float: right;
+    width: 120px;
+    height: auto;
+    border-radius: 5px;
+    margin: 5px;
+    filter: brightness(50%);
+    cursor: pointer;
+    border:1px solid white;
+}
+.mg:hover{
+    filter:brightness(100%);
+}
+.mark{
+    writing-mode:vertical-rl ;
+    position: absolute;
+    right: 0;
+    top: 30%;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+.last{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    text-align: center;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
+    font-size: 10px;
+    margin-top: 50px;
+    justify-content: space-between;
+    align-self: middle;
+}
+footer p{
+    align-self:center;
+}
+footer ul{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+.sm li{
+    display: inline;
+    padding: 5px 10px;
+    align-items: center;
+    align-self: middle;
+}
+.current-page input[type='radio']{
+display: none;
+}
+.current-page input[type='radio'] + label {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: gray;
+    position: relative;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: 0.75s;
+}
+.current-page input[type='radio']:checked + label {
+    background-color: rgb(255, 255, 255);
+}
+  /* Inner circle for checked state */
+.current-page input[type='radio']:checked + label:after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.current-page:hover{
+    background-color: darkgray;
+    padding: 5px 20px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+.current-page{
+    transition: 0.2s;
+
+}
+#gallery-content{
+    display: none;
+    width: auto;
+    height: auto;
+    overflow: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: white transparent;
+    transition: 0.5s;
+}
+#gallery-content h3{
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 0.05em;
+    font-family: gill;
+    margin: 15px 0;
+    z-index: 10;
+}
+#gallery-content p{
+    float: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#gallery-content img{
+    width: auto;
+    height: 210px;
+    border: transparent;
+    border-radius: 15px;
+    margin:5px ;
+    filter: brightness(80%);
+    transition: 0.2s;
+}
+#gallery-content img:hover{
+    filter: brightness(150%);
+    scale: 1.1;
+    transition: 0.2s;
+    z-index: 999;
+    border:1px solid gray;
+}
+#video-content{
+    display: none;
+    margin: auto;
+}
+#myVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85vh;
+    z-index: 10;
+    border-radius: 15px;
+}
+@media screen and (max-width:800px) {
+    .left{
+        display: block;
+        width: auto;
+    }
+    .right{
+        display: block;
+    }
+    .mg{
+        display: inline;
+        float: left;
+        width: 120px;
+        height: auto;
+        border-radius: 5px;
+        margin: 5px;
+        filter: brightness(50%);
+        cursor: pointer;
+        border:1px solid white;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        border-radius: 0;
+        padding: 1px 24px;
+        display: block;
+        position: relative;
+        width: auto;
+        height: 125vh;
+        background-image: none;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    article{
+        display: block;
+    }
+    #gallery-content{
+        overflow: scroll;
+        height: 80vh;
+        width: auto;
+    }
+    #video-content{
+        height: 80vh;
+    }
+    .des h1{
+        font-size: 2em;
+        line-height: 1.5em;
+        text-shadow: 0 0 10px black;
+        font-weight: 500;
+    }
+    .des p{
+        font-size: 1em;
+        text-shadow: 0 0 10px black;
+    }
+    .order{
+        width: 50vw;
+    }
+}
