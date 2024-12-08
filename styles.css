@@ -34,7 +34,7 @@ body{
     src: URL(./gill-sans-2/Gill\ Sans\ Light.otf);
 }
 #title{
-    font-family:gill ;
+    font-family:gill, arial ;
     font-size: 20px;
     text-align: center;
     margin: 0;
