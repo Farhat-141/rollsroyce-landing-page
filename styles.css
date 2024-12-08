@@ -31,7 +31,7 @@ body{
 }
 @font-face {
     font-family:gill ;
-    src: URL(./gill-sans-2/Gill\ Sans\ Light.otf);
+    src: URL(./Gill\ Sans\ Light.otf);
 }
 #title{
     font-family:gill, arial ;
